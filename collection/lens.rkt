@@ -1,9 +1,9 @@
 #lang curly-fn at-exp racket/base
 
-(require alexis/collection
-         (only-in lens lens? make-lens lens-view lens-set lens-thrush)
-         scribble/srcdoc
+(require data/collection
+         (except-in lens first-lens)
          racket/contract
+         scribble/srcdoc
          (for-doc racket/base
                   scribble/manual
                   "lens/private/sandbox.rkt"))

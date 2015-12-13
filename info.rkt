@@ -1,22 +1,20 @@
 #lang info
 
-(define name "alexis-collection-lens")
-(define version "0.2.0")
+(define name "collections-lens")
+(define version "1.0")
 
-(define collection "alexis")
+(define collection "data")
 
-(define scribblings '(("scribblings/main.scrbl" () (library) "alexis-collection-lens")))
+(define scribblings '(("scribblings/main.scrbl" () (library) "collections-lens")))
 
 (define deps
-  '("alexis-collections"
-    "base"
+  '("base"
+    "collections"
     "curly-fn"
     "lens"
     "scribble-lib"))
 (define build-deps
   '("at-exp-lib"
-    "cover"
-    "cover-coveralls"
     "doc-coverage"
-    "rackunit-lib"
-    "racket-doc"))
+    "racket-doc"
+    "rackunit-lib"))

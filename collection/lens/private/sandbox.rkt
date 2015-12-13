@@ -8,9 +8,9 @@
 (define lens:evaluator
   (make-eval-factory
    #:lang 'racket
-   '(alexis/collection
+   '(data/collection
      lens
-     alexis/collection/lens)))
+     data/collection/lens)))
 
 (define-syntax-rule (lens:interaction . body)
   (interaction #:eval (lens:evaluator) . body))

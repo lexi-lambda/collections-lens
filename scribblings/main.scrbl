@@ -4,9 +4,9 @@
 
 @title{Lenses for Generic Collections}
 
-@defmodule[alexis/collection/lens]
+@defmodule[data/collection/lens]
 
-This provides @tech[#:key "lens" #:doc '(lib "lens/main.scrbl")]{lenses} that examine and modify
-@tech[#:doc '(lib "alexis/scribblings/alexis-collections.scrbl")]{generic collections}.
+This provides @tech[#:key "lens" #:normalize? #f #:doc '(lib "lens/main.scrbl")]{lenses} that examine
+and modify @tech[#:doc '(lib "data/scribblings/collections.scrbl")]{generic collections}.
 
-@include-extracted[alexis/collection/lens]
+@include-extracted[data/collection/lens]
