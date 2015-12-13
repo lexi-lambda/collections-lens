@@ -18,8 +18,8 @@ before_install:
 
 install:
   - raco pkg install --auto --name collections-lens --link $TRAVIS_BUILD_DIR
-  - raco pkg install --auto cover cover-coveralls
+  - if [ "$RACKET_VERSION" == 'HEAD' ]; then raco pkg install --auto cover cover-coveralls; fi
 
 script:
   - raco test -p collections-lens
-  - raco cover -bf coveralls -d $TRAVIS_BUILD_DIR/coverage -p collections-lens
+  - if [ "$RACKET_VERSION" == 'HEAD' ]; then raco cover -bf coveralls -d $TRAVIS_BUILD_DIR/coverage -p collections-lens; fi
