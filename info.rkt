@@ -15,6 +15,5 @@
     "scribble-lib"))
 (define build-deps
   '("at-exp-lib"
-    "doc-coverage"
     "racket-doc"
     "rackunit-lib"))

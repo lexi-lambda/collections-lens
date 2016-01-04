@@ -21,5 +21,5 @@ install:
   - if [ "$RACKET_VERSION" == 'HEAD' ]; then raco pkg install --auto cover cover-coveralls; fi
 
 script:
-  - raco test -p collections-lens
+  - raco test -ep collections-lens
   - if [ "$RACKET_VERSION" == 'HEAD' ]; then raco cover -bf coveralls -d $TRAVIS_BUILD_DIR/coverage -p collections-lens; fi
