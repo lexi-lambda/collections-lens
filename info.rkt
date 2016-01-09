@@ -5,7 +5,7 @@
 
 (define collection "data")
 
-(define scribblings '(["scribblings/main.scrbl" () ("Data Libraries") "collections-lens"]))
+(define scribblings '(("scribblings/main.scrbl" () (library) "collections-lens")))
 
 (define deps
   '("base"
