@@ -9,7 +9,7 @@
   (make-eval-factory
    #:lang 'racket
    '(data/collection
-     lens
+     lens/common
      data/collection/lens)))
 
 (define-syntax-rule (lens:interaction . body)

@@ -11,9 +11,10 @@
   '("base"
     "collections"
     "curly-fn"
-    "lens"
+    "lens-common"
     "scribble-lib"))
 (define build-deps
   '("at-exp-lib"
     "racket-doc"
+    "lens-doc"
     "rackunit-lib"))

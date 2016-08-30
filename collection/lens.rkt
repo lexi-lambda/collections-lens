@@ -1,7 +1,7 @@
 #lang curly-fn at-exp racket/base
 
 (require data/collection
-         (except-in lens first-lens)
+         lens/common
          racket/contract
          scribble/srcdoc
          (for-doc racket/base
@@ -99,7 +99,7 @@
   (subsequence*-lens start (- end start)))
 
 (module+ test
-  (require rackunit (only-in lens lens-transform))
+  (require rackunit (only-in lens/common lens-transform))
   (test-case
    "ref-lens"
    (check-equal? (lens-transform (ref-lens 'key) (hash 'key 2) #{* 10})
