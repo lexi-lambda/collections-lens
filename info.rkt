@@ -17,4 +17,5 @@
   '("at-exp-lib"
     "racket-doc"
     "lens-doc"
+    "functional-doc"
     "rackunit-lib"))
